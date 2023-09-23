@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <span class="head">Welcome User! To calculate me</span>
+            <p class="para">Coded By Mr, Shazaib AbuBashar</p>
+        </div>
+        <div class="calculator">
+            <form>
+                <input type="text" name="display" id="display" class="display" readonly="">
+                <div class="line1">
+                    <input type="button" value="C" class="button op" onclick="Displayclear()">
+                    <input type="button" value="DEL" class="button op" onclick="deleteone()">
+                    <input type="button" value="%"  class="button op" onclick="displaypersen()">
+                    <input type="button" value="/"  class="button op">
+                </div>
+                <div class="line2">
+                    <input type="button" value="7"  class="button" onclick="display7()">
+                    <input type="button" value="8"  class="button" onclick="display8()">
+                    <input type="button" value="9"  class="button" onclick="display9()">
+                    <input type="button" value="X"  class="button op" onclick="displayX()">
+                </div>
+                <div class="line3">
+                    <input type="button" value="4"  class="button" onclick="display4()">
+                    <input type="button" value="5"  class="button" onclick="display5()">
+                    <input type="button" value="6"  class="button" onclick="display6()">
+                    <input type="button" value="-"  class="button op rel" onclick="displayminus()">
+                </div>
+                <div class="line4">
+                    <input type="button" value="1"  class="button" onclick="display1()">
+                    <input type="button" value="2"  class="button" onclick="display2()">
+                    <input type="button" value="3"  class="button" onclick="display3()">
+                    <input type="button" value="M+"  class="button">
+
+                </div>
+                <div class="line5">
+                    <input type="button" value="0"  class="button" onclick="display0()">
+                    <input type="button" value="."  class="button op" onclick="displaydot()">
+                    <input type="button" value="="  class="button op" onclick="evaluatefun()">
+                    <input type="button" value="+" class="button " onclick="displayplus()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
